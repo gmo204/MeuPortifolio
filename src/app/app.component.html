@@ -1,0 +1,355 @@
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container py-2">
+    <a class="navbar-brand fw-semibold" href="#">Tiago Santini</a>
+    <button
+      (click)="colapsarNavbar = !colapsarNavbar"
+      class="navbar-toggler"
+      type="button"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{ show: colapsarNavbar }">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link active" aria-current="page" href="#">Início</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="mt-5 mb-3" id="sobre">
+  <div class="container">
+    <div class="d-flex">
+      <img
+        class="img-fluid rounded-pill"
+        src="/foto-tiago.jpg"
+        alt="Foto do Tiago Santini"
+      />
+    </div>
+
+    <h2 class="display-5 fw-bold text-center mt-5">Um pouco sobre mim</h2>
+
+    <div class="row flex-wrap mt-5">
+      <div class="col-lg">
+        <h3 class="fs-3">
+          Meu nome é Tiago Santini, sou um desenvolvedor Full-Stack
+        </h3>
+
+        <p class="fs-5 mt-3">
+          Tenho 3 anos de experiência como desenvolvedor Full-Stack. Desenvolvi
+          vários projetos robustos com diferentes regras de negócio, utilizando
+          a
+          <span class="fw-semibold">Plataforma .NET </span>e
+          <span class="fw-semibold">Angular</span>.
+        </p>
+
+        <p class="fs-5">
+          Hoje sou professor na
+          <span class="fw-semibold">Academia do Programador</span>, uma empresa
+          focada no ensino e direcionamento de desenvolvedores para o mercado de
+          trabalho.
+        </p>
+      </div>
+
+      <div class="col">
+        <ul class="list-group">
+          <li class="list-group-item py-3">
+            <strong>Nome:</strong> Tiago Santini de Athayde
+          </li>
+          <li class="list-group-item py-3">
+            <strong>Email: </strong>
+            <a href="mailto:tiagosantiniathayde@gmail.com"
+              >tiagosantiniathayde&#64;gmail.com</a
+            >
+          </li>
+          <li class="list-group-item py-3"><strong>Idade:</strong> 24 anos</li>
+          <li class="list-group-item py-3">
+            <strong>De:</strong> Lages, Santa Catarina
+          </li>
+        </ul>
+
+        <div
+          class="d-flex justify-content-center align-items-center gap-3 mt-3"
+        >
+          <a class="text-light" href="https://github.com/tiagosantini">
+            <i class="bi bi-github fs-1"></i>
+          </a>
+          <a class="text-light" href="https://linkedin.com/in/tiagosantini">
+            <i class="bi bi-linkedin fs-1"></i>
+          </a>
+
+          <a
+            href="https://api.whatsapp.com/send?phone=5549985056251&text&type=phone_number&app_absent=0"
+            target="_blank"
+            class="btn btn-lg btn-warning rounded-5 px-md-5 fw-semibold"
+          >
+            Contato via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="habilidades">
+  <div>
+    <h2>Minhas habilidades</h2>
+
+    <div>
+      <div>
+        <span>
+          <i class="bi bi-window-fullscreen fs-1"></i>
+        </span>
+
+        <div>
+          <label>Web Design</label>
+
+          <small
+            >Design e desenvolvimento de sistemas web atraentes e
+            responsivos.</small
+          >
+        </div>
+      </div>
+
+      <div>
+        <span>
+          <i class="bi bi-server fs-1"></i>
+        </span>
+
+        <div>
+          <label>Aplicações Back-End</label>
+
+          <small
+            >Desenvolvimento de sistemas robustos para solucionar problemas
+            simples ou complexos.</small
+          >
+        </div>
+      </div>
+
+      <div>
+        <span>
+          <i class="bi bi-graph-up fs-1"></i>
+        </span>
+
+        <div>
+          <label>Testes Automatizados</label>
+
+          <small
+            >Criação de testes automatizados que facilitam a manutenção e
+            melhoram as entregas das aplicações.</small
+          >
+        </div>
+      </div>
+
+      <div>
+        <span>
+          <i class="bi bi-wrench fs-1"></i>
+        </span>
+
+        <div>
+          <label>Engenharia de Software</label>
+
+          <small
+            >Planejamento e execução de sistemas multi-camadas, integrando
+            várias tecnologias de forma organizada e escalável.</small
+          >
+        </div>
+      </div>
+
+      <div>
+        <span>
+          <i class="bi bi-people fs-1"></i>
+        </span>
+
+        <div>
+          <label>Liderança</label>
+
+          <small
+            >Habilidade de liderar e tomar decisões técnicas em projetos em
+            equipe.</small
+          >
+        </div>
+      </div>
+
+      <div>
+        <span>
+          <i class="bi bi-building-up fs-1"></i>
+        </span>
+
+        <div>
+          <label>Implantação</label>
+
+          <small class="fs-5"
+            >Implantação e manutenção de sistemas em servidores VPS e em
+            nuvem.</small
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section id="stack">
+  <div>
+    <h2>Stack</h2>
+
+    <div>
+      <div>
+        <div>
+          <span>.NET</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <span>Angular</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <span>TypeScript</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <span>Node.js</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <span>Discord.js</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <span>Firebase</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <span>Entity Framework</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <span>Microsoft SQL Server</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <span>MongoDB</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <span>Selenium</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <span>Cypress</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section id="experiencias">
+  <div>
+    <h2>Experiências</h2>
+
+    <div>
+      <div>
+        <div>
+          <div>
+            <span>Dez/2021 - Atualmente</span>
+            <br />
+            <img
+              src="/logo-academia.png"
+              alt="Logo da Academia do Programador"
+            />
+            <br />
+            <label>Professor de Programação</label>
+          </div>
+
+          <div>
+            <p>
+              Responsável pela instrução do curso, desenvolvimento e integração
+              das aplicações web e sistemas internos da organização.
+            </p>
+
+            <p>
+              <span>Stack:</span> .NET Framework, .NET 8, Entity Framework Core,
+              ASP.NET Core MVC, ASP.NET Web API, MSTest, Docker, Angular.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <div>
+            <span> Mar/2021 - Dez/2021 </span>
+            <br />
+            <img src="/logo-ndd-secundaria.png" alt="Logo da NDD" />
+            <br />
+            <label>Estagiário</label>
+          </div>
+
+          <div>
+            <p>
+              <span>Stack:</span> .NET Framework, .NET Core, Entity Framework
+              Core, ASP.NET Core MVC, ASP.NET Web API, Angular.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section id="portfolio">
+  <div>
+    <h2>Portfólio</h2>
+
+    <div>
+      <div>
+        <div>
+          <img
+            src="/img-academia-sm.png"
+            alt="Website da Academia do Programador versão mobile"
+          />
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <img
+            src="/img-gerenciador-cinema.png"
+            alt="Website da Academia do Programador versão mobile"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<footer class="text-bg-warning py-3">
+  <div class="container">
+    <p class="text-center mb-0">
+      Copyright © 2024 <span class="fw-semibold">Tiago Santini</span>. Todos os
+      direitos reservados.
+    </p>
+  </div>
+</footer>
