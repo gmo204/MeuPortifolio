@@ -1,24 +1,27 @@
-<nav class="navbar sticky-top navbar-expand-lg app-background-escuro-2">
-    <div class="container py-2">
-      <a class="navbar-brand fw-semibold" href="#">Gilberto Mota</a>
-      <button 
-        (click)="colapsarNavbar = !colapsarNavbar"
-        class="navbar-toggler" 
-        type="button" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
+<section id="header" class="container rounded-4 mt-5">
 
+  <nav class="navbar  navbar-expand-md navbar-expand-lg " data-bs-theme="dark">
+
+    <div class="container-fluid">
+      <a class="navbar-brand px-2" href="#">
+        <img src="favicon.ico" alt="Bootstrap" width="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" [ngClass]="{ show: colapsarNavbar}">
-        <div class="navbar-nav ms-auto">
-            <a
-          *ngFor="let link of linksNavbar"
-          class="nav-link active"
-          aria-current="page"
-          [href]="link.href"
-          >{{ link.texto }}</a>
-        </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li *ngFor="let link of linksNavbar" class="nav-item">
+            <a class="nav-link active" aria-current="page" [href]="link.href">{{ link.texto }}</a>
+          </li>
+
+        </ul>
+        
       </div>
     </div>
+
   </nav>
+
+</section>

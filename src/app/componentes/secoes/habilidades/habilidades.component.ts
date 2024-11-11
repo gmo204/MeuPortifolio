@@ -1,45 +1,34 @@
-import { Component } from "@angular/core";
-import { ItemHabilidades } from "./models/item-habilidades";
-import { NgForOf } from "@angular/common";
+import { NgFor } from '@angular/common';
+import { Component } from '@angular/core';
+import { Skill } from './models/skill';
 
 @Component({
-  selector: "app-habilidades",
+  selector: 'app-skills',
   standalone: true,
-  imports: [NgForOf],
-  templateUrl: "./habilidades.component.html",
-  styleUrl: "./habilidades.component.scss",
+  imports: [NgFor],
+  templateUrl: './habilidades.component.html',
+  styleUrl: './habilidades.component.scss'
 })
-export class HabilidadesComponent {
-  public itensHabilidades: ItemHabilidades[] = [
-    {
-      icone: "bi-window-fullscreen",
-      titulo: "Web Design",
-      descricao: `Design e desenvolvimento de sistemas web atraentes e responsivos.`,
-    },
-    {
-      icone: "bi-server",
-      titulo: "Aplicações Back-End",
-      descricao: `Desenvolvimento de sistemas robustos para solucionar problemas simples ou complexos.`,
-    },
-    {
-      icone: "bi-graph-up",
-      titulo: "Testes Automatizados",
-      descricao: `Criação de testes automatizados que facilitam a manutenção e melhoram as entregas das aplicações.`,
-    },
-    {
-      icone: "bi-wrench",
-      titulo: "Engenharia de Software",
-      descricao: `Planejamento e execução de sistemas multi-camadas, integrando várias tecnologias de forma organizada e escalável.`,
-    },
-    {
-      icone: "bi-people",
-      titulo: "Liderança",
-      descricao: `Habilidade de liderar e tomar decisões técnicas em projetos em equipe.`,
-    },
-    {
-      icone: "bi-building-up",
-      titulo: "Implantação",
-      descricao: `Implantação e manutenção de sistemas em servidores VPS e em nuvem.`,
-    },
+export class SkillsComponent {
+
+  public skills: Skill[] = [
+      { imageSource: "https://skillicons.dev/icons?i=html&theme=light", texto: "HTML" },
+      { imageSource: "https://skillicons.dev/icons?i=css&theme=light", texto: "CSS3" },
+      { imageSource: "https://skillicons.dev/icons?i=bootstrap&theme=light", texto: "Bootstrap" },
+      { imageSource: "https://skillicons.dev/icons?i=js&theme=light", texto: "JavaScript" },
+      { imageSource: "https://skillicons.dev/icons?i=ts&theme=light", texto: "TypeScript" },
+      { imageSource: "https://skillicons.dev/icons?i=angular&theme=light", texto: "Angular" },
+      { imageSource: "https://skillicons.dev/icons?i=cypress&theme=light", texto: "Cypress" },
+      { imageSource: "https://skillicons.dev/icons?i=git&theme=light", texto: "Git" },
+      { imageSource: "https://skillicons.dev/icons?i=github&theme=light", texto: "Github" },
+      { imageSource: "https://skillicons.dev/icons?i=vscode&theme=light", texto: "VS Code" },
+      { imageSource: "https://skillicons.dev/icons?i=cs&theme=light", texto: "C#" },
+      { imageSource: "https://skillicons.dev/icons?i=net&theme=light", texto: ".net Core" },
+      { imageSource: "sql-server-icon.png", texto: "Sql Server" },
+      { imageSource: "https://skillicons.dev/icons?i=postman&theme=light", texto: "Postman" },
+      { imageSource: "https://skillicons.dev/icons?i=selenium&theme=light", texto: "Selenium" },
+      { imageSource: "https://skillicons.dev/icons?i=docker&theme=light", texto: "Docker" },
+      { imageSource: "https://skillicons.dev/icons?i=azure&theme=light", texto: "Azure" },
+      { imageSource: "https://skillicons.dev/icons?i=visualstudio&theme=light", texto: "Visual Studio" }
   ];
 }

@@ -1,0 +1,14 @@
+#sobre {
+    background: var(--secao-bg-color);
+    box-shadow: var(--secao-box-shadow);
+  
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+  
+  #sobre .quote {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5rem;
+  }
